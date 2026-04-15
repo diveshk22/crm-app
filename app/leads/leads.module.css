@@ -1,0 +1,116 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg-base);
+  padding: 2rem 1.5rem;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  margin-bottom: 1.75rem;
+}
+
+/* ── Form ── */
+.formCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.formTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.btnSave {
+  align-self: flex-start;
+  padding: 0.7rem 1.75rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.btnSave:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* ── Leads List ── */
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.leadList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.leadCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s;
+}
+
+.leadCard:hover {
+  border-color: var(--accent);
+}
+
+.leadInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.leadName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.leadEmail {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.leadPhone {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 3rem 0;
+  font-size: 0.95rem;
+}
